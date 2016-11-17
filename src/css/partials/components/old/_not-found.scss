@@ -1,0 +1,20 @@
+.not-found{
+  text-align: center;
+  &__img{
+    margin-top: 20px;
+  }
+  &__title{
+    margin: 0;
+    @include font-family('Roboto Bold', normal, normal);  
+    font-size: 100px;
+    color: $blue;
+  }
+  &__text{
+    @include font-family('Open Sans Light', normal, normal); 
+    font-size: $font-size-menu;
+  }
+  &__btn{
+    margin: 40px 0 70px;
+  }
+}
+

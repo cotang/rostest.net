@@ -1,0 +1,23 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--front-page
+  - var index = true
+    // Cert form
+    include partials/components/_cert-form.pug
+    // Services
+    include partials/components/_services--excerpt.pug 
+    // Guide
+    include partials/components/_guide.pug 
+    // News section
+    include partials/components/_news-section.pug 
+    // Reviews
+    include partials/components/_reviews.pug 
+    // Clients
+    include partials/components/_clients.pug 
+    // Questions section
+    include partials/components/_questions-section.pug
+    // Contacts
+    include partials/components/_contacts.pug
+
+

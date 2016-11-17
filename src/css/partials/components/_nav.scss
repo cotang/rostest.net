@@ -1,0 +1,101 @@
+.nav{
+  // &__wrapper{
+  //   @include mq($from:xs, $until:lg){
+  //     display: none;
+  //     text-align: center;
+  //   }    
+  // }
+  &__list{    
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-menu;
+  //   @include mq($from:xs, $until:lg){
+  //     flex-wrap: wrap;
+  //     margin: 0;
+  //     padding-bottom: 10px;
+  //   }
+
+  //   &--sticky{
+  //     font-size: $font-size;
+  //     .nav__link{
+  //       padding: 15px 15px;
+  //     }
+  //   }
+  }
+  &__item{
+    flex: 1 0 auto;
+    text-align: center;    
+  //   @include mq($from:xs, $until:lg){
+  //     flex: 0 0 100%;
+  //   }
+    &--btn{
+      .nav__link{
+        background-color: $red;
+        color: $text-color-white;        
+        // &:hover, &:focus {
+        //   background-color: $white;
+        //   color: $red;
+        // }    
+      }
+    }
+  }
+
+  &__link{
+    @include font-family('Open Sans Semibold', normal, normal);
+    display: inline-block;
+    white-space: nowrap;
+    padding: 17px 20px;
+    width: 100%;
+    color: $text-color-white;
+  //   @include mq($from:lg, $until:xl){
+  //     padding: 15px 10px;
+  //   }
+  //   @include mq($from:xs, $until:lg){
+  //     padding: 10px;
+  //   }
+
+    &:hover, &:focus {
+      background-color: $red;
+      color: $text-color-white;
+      text-decoration: none;
+    }  
+  }
+  // &__hamburger{
+  //   display: none;
+  //   text-align: center;
+  //   margin: 5px 0;
+  //   @include mq($from:xs, $until:lg){
+  //     display: block;
+  //   }    
+  // } 
+}
+
+// .hamburger{
+//   display: inline-block;
+//   padding: 17px 6px;
+//   border-radius: 3px;
+//   span{
+//     display: block;
+//     width: 30px;
+//     margin: 0 auto;
+//     height: 4px;
+//     background-color: $orange;
+
+//     &:after, &:before{
+//       content: "";
+//       display: block;
+//       width: 30px;
+//       height: 4px;
+//       background-color: $orange;
+//     }
+//     &:before{
+//       transform: translateY(-10px);
+//     }    
+//     &:after{
+//       transform: translateY(6px);
+//     }    
+//   }
+// }

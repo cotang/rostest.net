@@ -1,0 +1,78 @@
+.form{
+  // text-align: center;
+  // position: relative;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+
+  &__input{
+    border-radius: 3px;
+    background-color: $white;
+    padding: 10px 15px;    
+    width: 100%;
+    border: 1px solid $border-grey;
+    outline: none;
+    margin-bottom: 20px;
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    } 
+  }
+  &__textarea{
+    border-radius: 3px;
+    background-color: $white;
+    padding: 10px 15px;    
+    width: 100%;
+    border: 1px solid $border-grey;
+    outline: none;
+    margin-bottom: 20px;
+    vertical-align: top;
+    height: 100px;
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    } 
+  } 
+  &__select{
+    border-radius: 3px;
+    background-color: $white;
+    padding: 10px 15px; 
+    width: 100%;
+    border: 1px solid $border-grey;;
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  &--application{    
+    border-radius: 3px;
+    background-color: $lightest-grey;
+    padding: 20px;
+    border: 1px solid $border-grey;
+  }
+  
+  &--question{
+    form{
+      columns: 2;
+      column-gap: 40px;
+    }
+    .form-group{
+      display: inline-block;  /* preventing from columns parts shifting */
+      vertical-align: top;    /* preventing from columns parts shifting */
+      width: 100%;            /* preventing from columns parts shifting */
+    }
+    .form__input, .form__textarea, .form__select{
+      margin-bottom: 25px;
+    }
+    .form__textarea{
+      height: 170px;
+    }
+  }
+}
+
+

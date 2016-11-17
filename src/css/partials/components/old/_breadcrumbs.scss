@@ -1,0 +1,19 @@
+.breadcrumbs{
+  color: $text-color-white;
+  @include font-family('Open Sans Light', normal, normal);
+  padding: 20px 0 0;
+  a{
+    margin-right: 10px;
+  }
+  a:not(:first-child){
+    margin-left: 10px;
+  }
+  span{
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  &--dark{
+    color: $text-color;
+  }
+}

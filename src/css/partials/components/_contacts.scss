@@ -1,0 +1,37 @@
+.contacts{
+  position: relative;
+  background-color: $lighter-grey;
+  padding: 80px 0;
+
+  &__map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include mq($from:xs, $until:lg){
+      // height: 350px;
+    }
+  }
+}
+
+
+.contacts-section{
+  background-color: $white;
+  padding: 10px 50px;
+  &__item{
+    margin: 20px 0;
+  }
+  &__title{
+    color: $cyan;
+    @include font-family('Open Sans Bold', normal, normal);
+    font-size: $font-size-biggest;
+    margin: 0 0 10px;
+  }
+  &__address{
+    color: $cyan;
+    font-size: $font-size-big;
+  }
+  &__link{
+    font-size: $font-size-big;
+  }
+}

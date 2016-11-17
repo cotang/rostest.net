@@ -1,0 +1,43 @@
+.search{
+  // padding-top: 10px;
+  position: relative;
+  @include mq($from:xs, $until:xl){
+    text-align: center;
+  }
+  &__form{
+    &:after{
+      content: '';
+      display: inline-block;
+      vertical-align: text-bottom;
+      @include sprite($s-icon-loupe);
+    }   
+  }
+  &__input{    
+    font-weight: $light;
+    font-size: $font-size-small;
+    background-color: transparent;
+    border: 2px solid $grey;
+    color: $link-color;
+    padding: 5px;
+    width: 180px;    
+    &:hover, &:focus{
+      outline: none;
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    }
+  }
+
+  &--header{
+    padding-top: 10px;
+    .search__input{
+      color: $link-color-white;
+      padding: 0 0 0 5px;
+      width: 140px;
+    }
+  }
+}
+

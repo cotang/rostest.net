@@ -1,0 +1,50 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--contacts
+    // Breadcrumbs
+    +b.SECTION.breadcrumbs
+      +e.inner.container
+        a(href="index.html") Сертификационный центр Ростест
+        ='>'
+        span Контакты
+    // Offices
+    +b.SECTION.offices
+      .container
+        +b.SECTION.office.row
+          .col-xs-12.col-lg-5
+            +e.H2.title Контакты в Москве
+            +b.contacts-section(itemscope, itemtype="http://schema.org/ContactPoint")
+              +e.item 
+                +e.H3.title Приходите в гости!
+                +e.DIV.address(itemprop="areaServed") г.Москва, пер. Грохольский, д. 32, оф. 302 
+              +e.item 
+                +e.H3.title Пишите!
+                +e.A.link--email(href="mailto:otdel@rostest.net", target="_blank", itemprop="email") otdel@rostest.net
+              +e.item 
+                +e.H3.title Звоните!
+                +e.A.link--tel(href="tel:+74956603066", target="_blank", itemprop="telephone") +7 (495) 660-30-66
+          .col-xs-12.col-lg-7                
+            +e.map
+              iframe       
+        +b.SECTION.office.row
+          .col-xs-12.col-lg-5
+            +e.H2.title Контакты в Москве
+            +b.contacts-section(itemscope, itemtype="http://schema.org/ContactPoint")
+              +e.item 
+                +e.H3.title Приходите в гости!
+                +e.DIV.address(itemprop="areaServed") г.Москва, пер. Грохольский, д. 32, оф. 302 
+              +e.item 
+                +e.H3.title Пишите!
+                +e.A.link--email(href="mailto:otdel@rostest.net", target="_blank", itemprop="email") otdel@rostest.net
+              +e.item 
+                +e.H3.title Звоните!
+                +e.A.link--tel(href="tel:+74956603066", target="_blank", itemprop="telephone") +7 (495) 660-30-66
+          .col-xs-12.col-lg-7                
+            +e.map
+              iframe 
+    // Questions section
+    include partials/components/_questions-section.pug
+
+
+

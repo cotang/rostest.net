@@ -1,0 +1,38 @@
+.best{
+  background-image: url(../img/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  &__form{
+    margin: 30px 0;
+    .form__title{
+      text-transform: none;
+      letter-spacing: normal;
+    }
+  }
+  &__block{
+    @include mq($from:xs, $until:lg){
+      text-align: center;
+    }
+  }
+  &__title{
+    color: $text-color-white;
+    font-size: $font-size-supertitle;
+    @include font-family('Roboto Bold', normal, normal);
+    line-height: 1;
+    margin: 20px 0;
+    @include mq($from:xs, $until:md){
+      font-size: $font-size-service-title;
+    }
+  }
+  &__text{
+    color: $text-color-white;
+    font-size: $font-size-menu;
+    @include font-family('Roboto Light', normal, normal);
+    margin-bottom: 30px;
+    @include mq($from:xs, $until:md){
+      margin-bottom: 0;
+    }
+  }
+}
+

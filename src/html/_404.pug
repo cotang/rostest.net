@@ -1,0 +1,21 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--404
+
+    // Not found
+    +b.SECTION.not-found
+      //- +e.img
+      //-   img(src='img/broken.png' alt='page-404' title='page-404')
+      +e.H1.title 404
+      +e.text К сожалению данный объект не найден
+    // Cert form
+    include partials/components/_cert-form.pug
+    // Questions section
+    include partials/components/_questions-section.pug
+    // Contacts
+    include partials/components/_contacts.pug
+
+
+
+

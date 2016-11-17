@@ -1,0 +1,19 @@
+.cert-form{
+  &__block{
+    margin: 50px 0;
+  }
+
+  &__title{
+    font-size: $font-size-supertitle;
+    @include font-family('Open Sans Bold', normal, normal);
+    color: $cyan;
+    margin: 0 0 10px;
+  }
+  &__text{
+    font-size: $font-size-subsupertitle;
+  }
+  &__form{
+    margin: 65px 0 110px;
+  }
+}
+

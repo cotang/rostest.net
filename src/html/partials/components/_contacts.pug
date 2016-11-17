@@ -1,0 +1,22 @@
+include ../abstracts/bemto/bemto.pug
+
+
++b.SECTION.contacts
+  +e.map
+  .container
+    .row
+      .col-xs-12.col-lg-5     
+        +b.contacts-section(itemscope, itemtype="http://schema.org/ContactPoint")
+          +e.item 
+            +e.H3.title Приходите в гости!
+            +e.DIV.address(itemprop="areaServed") г.Москва, пер. Грохольский, д. 32, оф. 302 
+          +e.item 
+            +e.H3.title Пишите!
+            +e.A.link--email(href="mailto:otdel@rostest.net", target="_blank", itemprop="email") otdel@rostest.net
+          +e.item 
+            +e.H3.title Звоните!
+            +e.A.link--tel(href="tel:+74956603066", target="_blank", itemprop="telephone") +7 (495) 660-30-66
+
+
+
+

@@ -1,0 +1,23 @@
+.nav-footer{
+  @include mq($from:xs, $until:lg){
+    margin-bottom: 30px;
+  }
+
+  &__list{    
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: $font-size;
+  }
+
+  &__link{
+    @include font-family('Open Sans Light', normal, normal);
+    display: inline-block;
+    padding: 5px 20px; 
+    color: $text-color-white;
+
+    &:hover, &:focus {
+      color: $text-color-white;
+    }
+  }
+}

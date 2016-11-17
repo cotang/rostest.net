@@ -1,0 +1,79 @@
+.services{
+  margin-bottom: 80px;
+  &__inner{    
+    background-color: $dark-cyan;    
+  }
+  &__title{
+    @include font-family('Open Sans Bold', normal, normal);
+    font-size: $font-size-title;
+    color: $text-color-white;
+    margin: 0;
+    padding: 45px 0 35px;  
+  }
+  &__types{
+    columns: 2;
+    margin: 100px 0 0;
+  }
+  &__btn{
+    text-align: center;
+  }
+}
+
+.services-type{
+  display: flex;
+  margin-bottom: 35px;
+
+  &__icon{
+    &--eac{
+      @include sprite($s-services-eac);
+    }
+    &--rst{
+      @include sprite($s-services-rst);
+    }
+    &--folders{
+      @include sprite($s-services-folders);
+    }
+    &--fire{
+      @include sprite($s-services-fire);
+    }
+    &--eagle{
+      @include sprite($s-services-eagle);
+    }
+    &--iso{
+      @include sprite($s-services-iso);
+    }
+  }
+
+  &__title{
+    @include font-family('Open Sans Bold', normal, normal);
+    font-size: $font-size-biggest;
+    margin: 0;     
+  }
+  &__title-link{
+    color: $cyan;
+    &:hover, &:focus {
+      // text-decoration: none;
+    }
+  }
+  &__text{
+    padding-left: 40px;
+  }
+  &__list{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 0;
+    list-style-type: none;
+    font-size: $font-size-big;
+    @include font-family('Open Sans Semibold', normal, normal);    
+  }
+  &__item{
+    margin-bottom: 10px;
+  }
+  // &__link{
+  //   display: inline-block;
+  //   color: $text-color;
+  //   &:hover, &:focus {
+  //     text-decoration: underline;
+  //   }
+  // }
+}

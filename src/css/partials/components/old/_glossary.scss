@@ -1,0 +1,145 @@
+.glossary{
+  padding-top: 35px;
+  @include mq($from:xs, $until:xl){
+    padding-top: 10px;
+  }
+
+  &--dark{
+    background-color: $dark-violet;
+    color: $text-violet;
+    .glossary__link{
+      font-size: $font-size;
+      @include font-family('Open Sans Light', normal, normal);
+      color: $text-violet;
+      padding: 0 3px;
+      &--active{
+        color: $text-color-white;
+      }      
+    }
+    .glossary____line{
+      border-bottom: 1px solid $text-violet;
+    }
+    .glossary-excerpt{
+      &:before{
+        background: linear-gradient(0deg, $dark-violet, transparent 50%);  
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        top: 20%;
+        right: 15px;
+        background-color: $text-violet;
+        width: 1px;
+        height: 60%;
+        @include mq($from:xs, $until:lg){
+          display: none;
+        }
+      }
+    }
+    .glossary-excerpt__link{
+      color: $text-color-white;
+      &:hover, &:focus {
+        color: $text-color-white;
+        // text-decoration: none;
+      }  
+    }    
+  }
+
+  &__line{
+    border-bottom: 1px solid $lighter-grey;
+  }
+  &__title{
+    color: $text-color-white;
+    font-size: $font-size-big;
+    @include font-family('Open Sans Light', normal, normal);
+    margin: 20px 0;
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    &--sidebar{
+      // justify-content: space-between;
+      .glossary__link{
+        padding: 10px;
+      }
+    } 
+  }
+  &__link{
+    font-size: $font-size-glossary-letter;
+    @include font-family('Open Sans Semibold', normal, normal);
+    color: $text-violet;
+    padding: 10px 5px 20px;
+    display: inline-block;
+    &--active{
+      color: $green;
+    }
+  }
+  &__btn{
+    @include mq($from:xs, $until:lg){
+      padding: 20px 0;
+    }
+
+    .btn{
+      @include mq($from:xs, $until:xl){
+        padding: 10px 20px;
+      }      
+    }
+  }
+  &__alphabet{
+    text-align: center;
+    @include font-family('Open Sans Semibold', normal, normal);
+    font-size: $font-size-big;
+  }
+}
+
+.glossary-excerpt{
+  max-height: 210px;
+  overflow-y: hidden; 
+  position: relative;
+  @include mq($from:xs, $until:md){
+    margin: 0 0 15px; 
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, $white, transparent 50%);  
+  }
+
+
+  &:last-of-type{
+    &:after{
+      display: none;
+    }      
+  }
+  &__title{
+    font-size: $font-size-big;
+    @include font-family('Open Sans Light', normal, normal);
+    margin: 35px 0 5px; 
+    @include mq($from:xs, $until:md){
+      margin: 20px 0 5px; 
+    } 
+  }
+  &__link{
+    @include font-family('Open Sans Regular', normal, normal);
+    color: $blue;
+      &:hover, &:focus {
+      color: $green;
+      // text-decoration: none;
+    }
+  }
+  &__text{
+    font-size: $font-size-glossary;
+    line-height: 1.666666;
+    @include font-family('Open Sans Regular', normal, normal);
+  }
+}
+
