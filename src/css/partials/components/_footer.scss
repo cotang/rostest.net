@@ -3,38 +3,67 @@
   padding-bottom: 50px;
   background-color: $grey-blue;
   color: $text-color-white;
+  @include mq($from:xs, $until:lg){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__inner{
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    @include mq($from:xs, $until:xl){
+      flex-wrap: wrap;
+    }
   }
   &__logo{
     margin-top: -10px;
     flex: 0 0 165px;
-    width: 165px;
-    height: 55px;
+    @include mq($from:xs, $until:xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0 0 25px;
+      text-align: center;
+    }
   }
 }
-
+    
 .nav-footer{
   padding-left: 50px;
   flex: 1 1 auto;
+  @include mq($from:xs, $until:xl){
+    padding-left: 0;
+  }
   &__list{
     padding-left: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    @include mq($from:xs, $until:md){
+      flex-wrap: wrap;
+      text-align: center;
+    }
   }
   &__item{
     padding: 0 10px;
     flex: 1 1 auto;
     max-width: 20%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 10px;
+    }
   }
   &__link{
     font-size: $font-size-big;
     color: $text-color-white;
     max-width: 120px;
     display: inline-block;
+    @include mq($from:xs, $until:lg){
+      width: 100%;
+      word-wrap: break-word;
+      max-width: initial;
+    }
   }
 }
 .subnav-footer{

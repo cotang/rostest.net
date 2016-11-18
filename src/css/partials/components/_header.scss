@@ -5,14 +5,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // @include mq($from:xs, $until:lg){
-    //   text-align: center;
-    // }    
+    flex-wrap: wrap;
+    @include mq($from:xs, $until:xl){
+      text-align: center;
+    }    
   }
   &__logo{
     margin: 25px 0;
-    width: 200px;
-    height: 73px;
+    flex: 0 0 200px;
+    @include mq($from:xs, $until:xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 15px 0;
+    }
+  }
+  &__slogan{
+    @include mq($from:xs, $until:xl){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }     
   }
   &__nav{
     background-color: $blue;
@@ -27,31 +38,59 @@
 }
 
 .logo{
-  display: block;
-  img{
-
+  display: inline-block;
+  &--header{
+    width: 200px;
+    height: 73px;
+  }
+  &--footer{
+    width: 165px;
+    height: 55px;    
   }
 }
 
 .slogan{
+  margin: 10px 0;
   @include font-family('Open Sans', normal, normal);
   font-size: $font-size-regular;
   text-align: left;
   max-width: 200px;
+  @include mq($from:xs, $until:xl){
+    max-width: initial;
+    text-align: center;
+  }
 }
 
 .city{
+  margin: 15px 0;
   flex: 0 0 57%;
   max-width: 57%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mq($from:xs, $until:xl){
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  } 
 
   &__name-wrapper{
     padding: 0 10px;
     margin-left: -10px;
     position: relative;
     border: 1px solid transparent;
+    @include mq($from:lg, $until:xl){
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+      margin-left: 0;
+    } 
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-bottom: 15px;
+    } 
+
     &--active{
       background-color: $white;
       border: 1px solid $light-grey;
@@ -62,15 +101,15 @@
   &__name{
     border-bottom: 2px dashed $text-blue;
     @include font-family('Open Sans', normal, normal); 
-    font-size: $font-size-biggest;    
-    // display: inline-block;
+    font-size: $font-size-biggest;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-big;
+    } 
+
     &:after{
       content: '▼';
       font-size: 0.6em;
       margin-left: 5px;      
-    }
-    &--active{
-      // color: $blue;
     }
     &:hover, &:focus {
       text-decoration: none;
@@ -94,17 +133,27 @@
   }
   &__item{
     padding: 2px 0;
-    // &:nth-of-type(1){
-    //   border-top: 1px solid $light-grey;
-    // }
+  }
+  &__link-wrapper{
+    @include mq($from:lg, $until:xl){
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }  
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }   
   }
   &__link{
-
     &--tel{
       @include font-family('Open Sans Semibold', normal, normal);
       font-size: $font-size-biggest26;
       color: $text-color-white;
       white-space: nowrap;
+      @include mq($from:xs, $until:lg){
+        font-size: $font-size-big;
+      } 
       &:hover, &:focus {
         text-decoration: none;
       }
@@ -113,6 +162,9 @@
       @include font-family('Open Sans', normal, normal); 
       font-size: $font-size-biggest;
       border-bottom: 2px dashed $blue;
+      @include mq($from:xs, $until:lg){
+        font-size: $font-size-big;
+      } 
       &:hover, &:focus {
         text-decoration: none;
         border-bottom: 2px dashed transparent;

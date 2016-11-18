@@ -2,21 +2,42 @@
   background-color: $dark-cyan;
   padding-top: 70px;
   padding-bottom: 85px;
+  @include mq($from:xs, $until:lg){
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 
   &__title{
     @include font-family('Open Sans Bold', normal, normal);
     font-size: $font-size-title;
     color: $text-color-white;
-    margin: 0 0 -10px;   
+    margin: 0 0 -10px;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-biggest;
+    }   
   }
   &__gallery{
     margin: 0 -20px;
   }
   .slick-prev{
     left: -80px;
+    @include mq($from:xs, $until:xl){
+      left: 20px;
+      opacity: .3;
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
   }
   .slick-next{
     right: -80px;
+    @include mq($from:xs, $until:xl){
+      right: 20px;
+      opacity: .3;
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -50,6 +71,10 @@
     left: -20px;
     width: 70px;
     height: 100px;
+    @include mq($from:xs, $until:md){
+      left: -10px;
+    }
+
     img{
       width: 100%;
       height: 100%;

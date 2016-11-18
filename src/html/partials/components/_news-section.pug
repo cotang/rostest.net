@@ -5,14 +5,14 @@ include ../abstracts/bemto/bemto.pug
     +e.H2.title Новости
     .row 
       - for (var i = 0; i < 2; i++){
-        .col-xs-12.col-md-6.col-lg-3
+        .col-xs-12.col-md-6.col-xl-3
           +b.ARTICLE.news-section-article            
             +e.DIV.img
               img(src='img/news1.jpg', alt='news1', title='news1')
             +b.DIV.date 13.09.2016
             +e.H3.title 
               +e.A.link(href="single-news.html") Сертификат соответствия Декларация о соответствии
-        .col-xs-12.col-md-6.col-lg-3
+        .col-xs-12.col-md-6.col-xl-3
           +b.ARTICLE.news-section-article
             +e.DIV.img
               img(src='img/news2.jpg', alt='news2', title='news2', itemprop="image")

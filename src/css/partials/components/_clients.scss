@@ -3,21 +3,42 @@
   background-color: $pale;
   padding-top: 70px;
   padding-bottom: 90px;
+  @include mq($from:xs, $until:lg){
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 
   &__title{
     @include font-family('Open Sans Bold', normal, normal);
     font-size: $font-size-title;
     color: $text-grey-title;
-    margin: 0 0 30px;   
+    margin: 0 0 30px;  
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-biggest;
+    } 
   }
   &__gallery{
     margin: 0 -15px;
   }
   .slick-prev{
     left: -80px;
+    @include mq($from:xs, $until:xl){
+      left: 20px;
+      opacity: .3;
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
   }
   .slick-next{
     right: -80px;
+    @include mq($from:xs, $until:xl){
+      right: 20px;
+      opacity: .3;
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
   }
 }
 .client-slide{

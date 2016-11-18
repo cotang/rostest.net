@@ -4,12 +4,13 @@ include ../abstracts/bemto/bemto.pug
   .container
     .row
       .col-xs-12.col-lg-6
-        // Manager
-        +b.manager(itemscope, itemtype="http://schema.org/Person")
+        // Manager citation
+        +b.manager-citation(itemscope, itemtype="http://schema.org/Person")
           +e.img
             img(src="img/manager1.jpg", alt="manager", title="manager", itemprop="image")
           +e.wrapper
-            +e.citation Остались вопросы?
+            +e.citation-wrapper
+              +e.citation Остались вопросы?
             +e.H3.name(itemprop="name") Мария Филиппова         
             +e.position(itemprop="jobTitle") специалист-консультант 
       .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-0

@@ -1,8 +1,9 @@
 .breadcrumbs{
-  color: $text-color-white;
-  @include font-family('Open Sans Light', normal, normal);
-  padding: 20px 0 0;
+  background-color: $breadcrumbs-grey;
+  color: $grey;
+  padding: 10px 0;
   a{
+    color: $grey;
     margin-right: 10px;
   }
   a:not(:first-child){
@@ -11,9 +12,5 @@
   span{
     display: inline-block;
     margin-left: 10px;
-  }
-
-  &--dark{
-    color: $text-color;
   }
 }

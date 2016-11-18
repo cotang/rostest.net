@@ -2,18 +2,18 @@ include ../abstracts/bemto/bemto.pug
 
 +b.SECTION.services(itemscope, itemtype="http://schema.org/Service")
   if index
-    +e.inner
+    +e.inner-cyan
       .container
-        +e.H2.title Часто требуется
+        +e.H2.title--white Часто требуется
 
   .container
     if !index
       +e.search
         // Search
         +b.search
-          +e.FORM.form
+          +e.FORM.form(action='', method='')
             +e.INPUT.input(type='text', name='Поиск', placeholder='Поиск по тегам')
-            +e.INPUT.button(type='submit')
+            +b.BUTTON.btn--search(type='submit') Найти
 
     +e.types
       +b.services-type 

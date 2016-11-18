@@ -27,6 +27,18 @@
   &--more{
     padding: 15px 55px;
   }
+  &--search{
+    border-radius: 0 3px 3px 0;
+    background-color: $blue;
+    &:before{
+      content: '';
+      display: inline-block;
+      vertical-align: baseline;
+      margin-right: 5px;
+      margin-bottom: -2px;
+      @include sprite($s-search);
+    }
+  }
 
   // &--404{
   //   background-color: $green;

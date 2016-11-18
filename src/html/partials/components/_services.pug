@@ -2,18 +2,18 @@ include ../abstracts/bemto/bemto.pug
 
 +b.SECTION.services(itemscope, itemtype="http://schema.org/Service")
   .container
+    +e.H2.title Услуги
+
     +e.search
       // Search
       +b.search
-        +e.FORM.form
+        +e.FORM.form(action='', method='')
           +e.INPUT.input(type='text', name='Поиск', placeholder='Поиск по тегам')
-          +e.INPUT.button(type='submit')
+          +b.BUTTON.btn--search(type='submit') Найти
           
     +e.types
       +b.services-type 
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--eac
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Подтверждение соответствия ТР ТС
@@ -23,9 +23,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Декларация ТР ТС
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--eagle
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Государственная регистрация:
@@ -37,9 +35,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Экспертное заключение о сроках годности
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--rst
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Система сертификации ГОСТ Р:
@@ -53,9 +49,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Сертификат на услуги в системе ГОСТ Р 
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--folders
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Разработка нормативно-технической документации
@@ -95,9 +89,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Разработка чертежей 
       +b.services-type 
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--letters
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Отказные письма
@@ -117,9 +109,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") ВНИИС
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--eco
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Экологические сертификаты
@@ -137,9 +127,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Сертификат FSC
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--scheme
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Сертификация радиоэлектронных средств, высокочастотных устройств и шифровальных средств 
@@ -153,9 +141,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Декларация Минсвзязи
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--globe
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Зарубежные сертификаты 
@@ -173,9 +159,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Сертификат бережливого производства
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--auto
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Сертификация транспортных средств   
@@ -191,9 +175,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Сертификат ТРТС     
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--eac
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Система добровольной сертификации ЕАС:
@@ -203,9 +185,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Декларация ТР ТС
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--fire
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Пожарная сертификация:
@@ -217,9 +197,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Добровольный пожарный сертификат
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--water
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Санитарно-эпидемиологический надзор и фитосанитарный надзор
@@ -233,9 +211,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") Карантийный сертификат  
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--iso
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Сертификация систем менеджмента
@@ -295,9 +271,7 @@ include ../abstracts/bemto/bemto.pug
             +e.item 
               +e.A.link(href="single-service.html", itemprop="offers") ГОСТ РВ 15.002-2003 "Система разработки и постановки продукции на производство. Военная техника. Система менеджмента качества. Общие требования" 
       +b.services-type
-        +e.icon
-          svg(width='30', height='30')
-            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#versions')
+        +e.icon--other
         +e.text
           +e.H3.title
             +e.A.title-link(href="single-service.html", itemprop="serviceType") Прочие услуги

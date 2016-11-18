@@ -6,26 +6,30 @@ include ../abstracts/bemto/bemto.pug
   .container
     +e.H2.title Преимущества нашей компании
     .row
-      +e.item.col-xs-12.col-md-6.col-xl-3
-        +e.img
-          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1')
+      +b.advantage.col-xs-12.col-md-6.col-xl-3
+        +e.img--consult
+          svg(width='30', height='30')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#adv-consult')
         +e.H3.title Бесплатные консультации
         +e.text Ответим на вопросы  и подберем оптимальные условия оформления разрешительных документов
 
-      +e.item.col-xs-12.col-md-6.col-xl-3
-        +e.img
-          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1')
+      +b.advantage.col-xs-12.col-md-6.col-xl-3
+        +e.img--manager
+          svg(width='30', height='30')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#adv-manager')
         +e.H3.title Персональный менеджер
         +e.text Опытный специалист возьмет на себя задачи по проработке необходимых документов и оформлению заявки
 
-      +e.item.col-xs-12.col-md-6.col-xl-3
-        +e.img
-          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1')
+      +b.advantage.col-xs-12.col-md-6.col-xl-3
+        +e.img--shipping
+          svg(width='30', height='30')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#adv-shipping')
         +e.H3.title Доставка за наш счет
         +e.text Оформите заявку, пришлите минимальный пакет документов и наш курьер доставит все бесплатно
 
-      +e.item.col-xs-12.col-md-6.col-xl-3
-        +e.img
-          img(src= "img/review-logo1.png", alt='review-logo1', title='review-logo1')
+      +b.advantage.col-xs-12.col-md-6.col-xl-3
+        +e.img--experience
+          svg(width='30', height='30')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#adv-experience')
         +e.H3.title Опыт 17 лет в сфере
         +e.text С 1999г. мы занимаемся сертификацией товаров и услуг, постоянно отслеживая изменения в законодательсте

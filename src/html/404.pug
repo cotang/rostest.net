@@ -5,10 +5,14 @@ block content
 
     // Not found
     +b.SECTION.not-found
-      //- +e.img
-      //-   img(src='img/broken.png' alt='page-404' title='page-404')
-      +e.H1.title 404
-      +e.text К сожалению данный объект не найден
+      .container
+        +e.inner
+          +e.H1.title 404
+          +e.text 
+            div К сожалению, 
+            div данный объект не найден
+    // Services
+    include partials/components/_services--excerpt.pug 
     // Cert form
     include partials/components/_cert-form.pug
     // Questions section

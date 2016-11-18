@@ -1,0 +1,88 @@
+.page{
+  // &--form{
+  //   .content__bg{
+  //     background-image: url(../img/bg-calc.jpg);      
+  //   }
+  //   .content__title{
+  //     margin: 0;
+  //     padding-top: 5px;
+  //     padding-bottom: 15px;
+  //   }
+  // }
+  // &--faq, &--questions{
+  //   .content__bg{
+  //     background-image: url(../img/bg-faq.jpg);      
+  //   }
+  //   .content__title{
+  //     margin: 0;
+  //     padding-top: 5px;
+  //     padding-bottom: 15px;
+  //   }   
+  // }
+  // &--news{
+  //   .content__bg{
+  //     background-image: url(../img/bg-news.jpg);      
+  //   }
+  //   .content__title{
+  //     margin: 0;
+  //     padding-top: 5px;
+  //     padding-bottom: 15px;
+  //   }
+  // }
+  // &--single-news, &--glossary, &--single-glossary {
+  //   .content__bg{
+  //     background-image: url(../img/bg-calc.jpg);      
+  //   }
+  //   .content__title{
+  //     margin: 0;
+  //     padding-top: 5px;
+  //     padding-bottom: 15px;
+  //   }
+  // }
+  // &--single-glossary {
+  //   .content__text{
+  //     margin-top: 45px;
+  //   }
+  // }
+  // &--single-service {
+  //   border-top: 1px solid $lighter-grey;
+  //   .content__title{
+  //     color: $green;
+  //     @include font-family('Roboto Bold', normal, normal);
+  //     font-size: $font-size-service-title;
+  //     margin: 20px 0;
+  //   }
+  // }
+  &--services{
+    .services{
+      border-bottom: 2px solid $border-grey;
+    }
+    .services__types{
+      margin-top: 50px;
+    }
+    .services-type__title{
+      font-size: $font-size-bigger;
+    }
+    .services-type__list{
+      font-size: $font-size;      
+    }
+  } 
+  &--404{
+    .services{
+      border-bottom: 2px solid $border-grey;
+    }
+    .services__types{
+      margin-top: 85px;
+    }
+  } 
+  // &--contacts{
+  //   border-top: 1px solid $lighter-grey;
+  // }
+
+
+
+  // &__form{
+  //   margin: 70px 0;
+  // } 
+}
+
