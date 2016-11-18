@@ -48,7 +48,7 @@
         <div class="header__inner">
           <div class="header__logo">
             <!-- Logo-->
-            <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+            <a class="logo logo--header" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
               <img src="img/logo.svg" alt="logo" title="logo" itemprop="logo">
             </a>
           </div>
@@ -80,12 +80,16 @@
                   <a class="city__link" href="#">Уфа</a>
                 </li>
                 <li class="city__item">
-                  <a class="city__link" href="#">Курган </a>
+                  <a class="city__link" href="#">Курган</a>
                 </li>
               </ul>
             </div>
-            <a class="city__link city__link--tel" href="tel:+74956603066" target="_blank" itemprop="telephone">+7 (495) 660-30-66</a>
-            <a class="city__link city__link--email" href="mailto:otdel@rostest.net" target="_blank" itemprop="email">otdel@rostest.net</a>
+            <div class="city__link-wrapper">
+              <a class="city__link city__link--tel" href="tel:+74956603066" target="_blank" itemprop="telephone">+7 (495) 660-30-66</a>
+            </div>
+            <div class="city__link-wrapper">
+              <a class="city__link city__link--email" href="mailto:otdel@rostest.net" target="_blank" itemprop="email">otdel@rostest.net</a>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +131,7 @@
     <main>
       <section class="page page--front-page"></section>
       <!-- Cert form-->
-      <section class="cert-form">
+      <div class="cert-form">
         <div class="container">
           <div class="row row-xs-middle">
             <div class="col-xs-12 col-lg-5 offset-lg-1">
@@ -167,12 +171,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- Services-->
       <section class="services" itemscope itemtype="http://schema.org/Service">
-        <div class="services__inner">
+        <div class="services__inner-cyan">
           <div class="container">
-            <h2 class="services__title">Часто требуется</h2>
+            <h2 class="services__title services__title--white">Часто требуется</h2>
           </div>
         </div>
         <div class="container">
@@ -283,7 +287,9 @@
       <section class="guide">
         <div class="container">
           <div class="guide__inner">
-            <div class="guide__icon"></div>
+            <div class="guide__icon-wrapper">
+              <div class="guide__icon"></div>
+            </div>
             <div class="guide__wrapper">
               <h2 class="guide__title">Краткий справочник по сертификации</h2>
               <div class="guide__btn">
@@ -298,7 +304,7 @@
         <div class="container">
           <h2 class="news-section__title">Новости</h2>
           <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="col-xs-12 col-md-6 col-xl-3">
               <article class="news-section-article">
                 <div class="news-section-article__img">
                   <img src="img/news1.jpg" alt="news1" title="news1">
@@ -309,7 +315,7 @@
                 </h3>
               </article>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="col-xs-12 col-md-6 col-xl-3">
               <article class="news-section-article">
                 <div class="news-section-article__img">
                   <img src="img/news2.jpg" alt="news2" title="news2" itemprop="image">
@@ -320,7 +326,7 @@
                 </h3>
               </article>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="col-xs-12 col-md-6 col-xl-3">
               <article class="news-section-article">
                 <div class="news-section-article__img">
                   <img src="img/news1.jpg" alt="news1" title="news1">
@@ -331,7 +337,7 @@
                 </h3>
               </article>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="col-xs-12 col-md-6 col-xl-3">
               <article class="news-section-article">
                 <div class="news-section-article__img">
                   <img src="img/news2.jpg" alt="news2" title="news2" itemprop="image">
@@ -510,15 +516,17 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-lg-6">
-              <!-- Manager-->
-              <div class="manager" itemscope itemtype="http://schema.org/Person">
-                <div class="manager__img">
+              <!-- Manager citation-->
+              <div class="manager-citation" itemscope itemtype="http://schema.org/Person">
+                <div class="manager-citation__img">
                   <img src="img/manager1.jpg" alt="manager" title="manager" itemprop="image">
                 </div>
-                <div class="manager__wrapper">
-                  <div class="manager__citation">Остались вопросы?</div>
-                  <h3 class="manager__name" itemprop="name">Мария Филиппова </h3>
-                  <div class="manager__position" itemprop="jobTitle">специалист-консультант </div>
+                <div class="manager-citation__wrapper">
+                  <div class="manager-citation__citation-wrapper">
+                    <div class="manager-citation__citation">Остались вопросы?</div>
+                  </div>
+                  <h3 class="manager-citation__name" itemprop="name">Мария Филиппова </h3>
+                  <div class="manager-citation__position" itemprop="jobTitle">специалист-консультант </div>
                 </div>
               </div>
             </div>
@@ -585,7 +593,7 @@
         <div class="footer__inner">
           <div class="footer__logo">
             <!-- Logo-->
-            <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+            <a class="logo logo--footer" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
               <img src="img/logo.svg" alt="logo" title="logo" itemprop="logo">
             </a>
           </div>
