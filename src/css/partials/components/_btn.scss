@@ -9,11 +9,6 @@
   text-transform: uppercase;
   padding: 10px 30px;
   margin: 0;
-  // &:hover, &:focus, &:active{
-  //   color: $text-color-white;
-  //   text-decoration: none;
-  //   background-color: $orange-btn-hover;
-  // }
 
   &--blue{
     background-color: $blue;
@@ -24,6 +19,9 @@
   &--form{
     width: 100%;
   } 
+  &--application{
+    @include font-family('Open Sans Extrabold', normal, normal);
+  }   
   &--more{
     padding: 15px 55px;
   }
@@ -40,36 +38,5 @@
     }
   }
 
-  // &--404{
-  //   background-color: $green;
-  //   text-transform: none;
-  // }
-  // &--more{
-  //   border: 1px solid $dark-violet;
-  //   background-color: $white;
-  //   color: $dark-violet;
-  //   @include font-family('Open Sans Regular', normal, normal); 
-  //   font-size: $font-size-small;
-  //   &:hover, &:focus, &:active{
-  //     color: $dark-violet;
-  //     text-decoration: underline;
-  //     background-color: $white;
-  //   }
-  // } 
-  // &--faq{
-  //   border: 1px solid $dark-violet;
-  //   background-color: $white;
-  //   color: $dark-violet;
-  //   @include font-family('Open Sans Regular', normal, normal); 
-  //   font-size: $font-size-small;
-  //   &:hover, &:focus, &:active{
-  //     color: $white;
-  //     text-decoration: none;
-  //     background-color: $dark-violet;
-  //   }    
-  // }
-  // &--footer{
-  //   font-size: $font-size;
-  // }
 }
 

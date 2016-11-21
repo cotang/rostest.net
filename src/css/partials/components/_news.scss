@@ -1,108 +1,77 @@
 .news{
-  // margin-top: 35px;
-  // &__link{
-  //   &:hover, &:focus {
-  //     .date{
-  //       color: $green;
-  //       &:before{
-  //         background-color: $green;
-  //       }        
-  //     }
-  //     .news__title{
-  //       color: $green; 
-  //     }
-  //     .news__img{
-  //       &:before{
-  //         opacity: 0.4;
-  //       } 
-  //     }
-  //   }    
-  // }
-  // &__article{
-  //   text-align: center;
-  // }
-  // &__img{
-  //   width: 100%;
-  //   height: 0;
-  //   padding-bottom: 33.3333%;
-  //   position: relative;
-  //   img{
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     object-fit: cover;
-  //     object-position: center center;
-  //   }
-  //   &:before{
-  //     @include transition();
-  //     content: '';
-  //     position: absolute;
-  //     z-index: 1;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     background-color: $green;
-  //     opacity: 0;
-  //   }
-  // }
-  // &__title{
-  //   @include transition();
-  //   margin: 5px 20px 50px;
-  //   @include font-family('Open Sans Light', normal, normal);
-  //   font-size: $font-size-news-subtitle;
-  //   color: $text-color; 
-  // }
-}
-
-.date{
-  display: inline-block;
-  margin-top: 5px;
-  @include font-family('Open Sans Light', normal, normal);
-  color: $text-color;
-  span{
-    background-color: $white;
-    padding: 0 10px;
-    position: relative;
-    z-index: 1;
+  margin-top: 35px;
+  &__title{
+    margin: 0 0 25px;
+    @include font-family('Open Sans Bold', normal, normal);
+    font-size: $font-size-title;
+    color: $light-cyan; 
+  }
+  &__category{
+    margin: 0 0 25px;
+    @include font-family('Open Sans Bold', normal, normal);
+    font-size: $font-size-bigger;
+    color: $light-cyan; 
   }
 }
 
-// .latest-news{
-//   @include font-family('Open Sans Light', normal, normal);
-//   &__title{
-//     position: relative;
-//     font-size: $font-size-big;
-//     @include font-family('Open Sans Light', normal, normal);
-//     &:before{
-//       content: '';
-//       position: absolute;
-//       width: 70px;
-//       height: 1px;
-//       bottom: -20px;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       background-color: $lighter-grey;
-//     }
-//   }
-//   &__list{
-//     padding-top: 10px;
-//     padding-left: 0;
-//     list-style-type: none;
-//     margin: 0;
-//   }
-//   &__item{
-//     margin: 10px 0;
-//   }
-//   &__more{
-//     display: inline-block;
-//     margin-top: 10px;
-//     text-transform: uppercase;
-//     color: $grey;
-//     &:hover, &:focus {
-//       color: $text-color;
-//     }
-//   }
-// }
+.news-item{
+  margin-bottom: 50px;
+  &__img{
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+    position: relative;
+    margin-bottom: 20px;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }    
+  }
+  &__date{
+    color: $review-grey;
+    @include font-family('Open Sans Semibold', normal, normal);
+  }
+  &__title{
+    margin: 10px 0 10px;
+    @include font-family('Open Sans Bold', normal, normal);
+    font-size: $font-size-bigger;
+    color: $light-cyan; 
+  }  
+  &__excerpt{
+    margin-bottom: 10px;
+  }
+  &__link{
+    @include font-family('Open Sans Semibold', normal, normal);
+    color: $blue; 
+  }
+}
+
+.news-categories{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  &__title{
+    margin: 0 0 15px;
+    @include font-family('Open Sans Semibold', normal, normal);
+    font-size: $font-size-bigger;
+    color: $light-cyan; 
+  }
+  &__list{
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+  &__item{
+    margin: 10px 0 15px;
+  }
+  &__link{
+    @include font-family('Open Sans Semibold', normal, normal);
+    color: $blue; 
+  }
+}

@@ -72,17 +72,17 @@ jQuery(document).ready(function($){
   });
 
   /* sticky menu */
-  // var headerInner = $('.header__inner');
-  // var headerNav = $('.header__nav');
-  // $(window).scroll(function () {
-  //   if ($(window).width() > 768) {
-  //     if ($(this).scrollTop() >= headerInner.height() ) {
-  //       $(headerNav).addClass('header__nav--sticky');
-  //     } else {
-  //       $(headerNav).removeClass('header__nav--sticky');
-  //     }
-  //   }
-  // });
+  var headerInner = $('.header__inner');
+  var headerNav = $('.header__nav');
+  $(window).scroll(function () {
+    if ($(window).width() > 768) {
+      if ($(this).scrollTop() >= headerInner.height() ) {
+        $(headerNav).addClass('header__nav--sticky');
+      } else {
+        $(headerNav).removeClass('header__nav--sticky');
+      }
+    }
+  });
 
   /* hamburger */
   $('.hamburger').click(function(e) { 
@@ -91,46 +91,27 @@ jQuery(document).ready(function($){
   });
 
 
-  // $('.nav__link--dropdown').click(function(e) { 
-  //     e.preventDefault();
-  //     $(this).closest('.header').find('.menu-services').show();
-  // });
+  /* Review in the modal window */
+  $('.review-slide__img').click( function(e){ 
+    e.preventDefault(); 
+    $('body').css({"overflow-y":"hidden"});   
+    $('.modal').show();
+    $(this).closest('.review-slide').find('.review-slide__modal').clone().appendTo($('.modal'))
+    .show()
+    .animate({opacity: 1}, 200); 
+  });
+  /* Close the modal window */
+  $('.modal__overlay').click( function(){ 
+    $('body').css({"overflow-y":"auto"});
+    $(this).closest('.modal').find('.review-slide__modal')
+      .animate({opacity: 0}, 200,  
+        function(){
+          $(this).remove();
+          $('.modal').fadeOut(400);
+        }
+      );
+  }); 
 
-  // $('.menu-services__close').click(function(e) { 
-  //     e.preventDefault();
-  //     $(this).closest('.menu-services').hide();
-  // });
-
-  // var servicesMoreLink = $('.services-type__item--more .services-type__link');
-  // $(servicesMoreLink).click(function(e) { 
-  //     e.preventDefault();
-  //     $(this).closest('.services-type__item--more').hide();
-  //     $(this).closest('.services-type__list').find('.services-type__item--hidden').show();
-  // });
-
-  // /* Faq accordion */
-  // $('.faq__ask').click(function(){
-  //   if($(this).next('.faq__answer').is(":visible")) {
-  //     $(this).next('.faq__answer').slideUp();
-  //     $(this).closest('.faq__block').find('.faq__icon--active').removeClass('faq__icon--active');
-  //   } else {
-  //     $(this).closest('.faq').find('.faq__answer').slideUp();
-  //     $(this).siblings('.faq__answer').slideDown();
-  //     $(this).closest('.faq').find('.faq__icon--active').removeClass('faq__icon--active');
-  //     $(this).closest('.faq__block').find('.faq__icon').addClass('faq__icon--active');
-  //   }
-  // }); 
-
-
-  // /* search */
-  // $('.social-links__link--search').click(function(e) { 
-  //     e.preventDefault();    
-  //     $('.search').show();
-  // });
-  // $('.search__close').click(function(e) { 
-  //     e.preventDefault();    
-  //     $('.search').hide();
-  // });
 
   // /* плавный скролл наверх */
   // $('.up').click(function () {
@@ -150,22 +131,25 @@ jQuery(document).ready(function($){
   // }
 
 
-    var contactsHeight = $('.contacts').outerHeight();
+    var contactsHeight = $('.contacts-section').outerHeight();
     console.log(contactsHeight);
     if ($(window).width() > 768) {
-      $('.contacts__map').css('height', contactsHeight+'px');
+      $('.contacts-section__map').css('height', contactsHeight+'px');
     }
 
+
     /* Map */
-    var map = new GMaps({
-        el: '.contacts__map',
-        lat: 59.971198,
-        lng: 30.315121,
-        scrollwheel: false
-    });
-    map.addMarker({
-        lat: 59.971198,
-        lng: 30.315121,
+    $('.map').each(function (index, Element) {
+        var map = new GMaps({
+            el: Element,
+            lat: 55.777494,
+            lng: 37.643639,
+            scrollwheel: false
+        });
+        map.addMarker({
+            lat: 55.777494,
+            lng: 37.643639,
+        });
     });
 
 });

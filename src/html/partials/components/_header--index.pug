@@ -1,0 +1,65 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  .container
+    +e.inner
+      +e.logo
+        // Logo
+        +b.A.logo--header(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
+          img(src="img/logo.svg", alt="logo", title="logo", itemprop="logo")
+      // Slogan
+      +e.slogan
+        if index
+          +b.H1.slogan Единая государственная сертификация  
+        else
+          +b.H2.slogan Единая государственная сертификация
+      // Contacts
+      +b.city(itemscope, itemtype="http://schema.org/ContactPoint")
+        +e.name-wrapper
+          +e.A.name(href="#", itemprop="areaServed") Москва
+          +e.UL.dropdown
+            +e.item
+              +e.A.link(href="#") Москва
+            +e.item
+              +e.A.link(href="#") Санкт-Петербург
+            +e.item
+              +e.A.link(href="#") Краснодар
+            +e.item
+              +e.A.link(href="#") Пермь
+            +e.item
+              +e.A.link(href="#") Сургут
+            +e.item
+              +e.A.link(href="#") Уфа
+            +e.item
+              +e.A.link(href="#") Курган
+        +e.link-wrapper
+          +e.A.link--tel(href="tel:+74956603066", target="_blank", itemprop="telephone") +7 (495) 660-30-66
+        +e.link-wrapper
+          +e.A.link--email(href="mailto:otdel@rostest.net", target="_blank", itemprop="email") otdel@rostest.net
+
+  +e.nav
+    .container
+      // Nav
+      +b.NAV.nav
+        +e.hamburger
+          +b.A.hamburger(href="#")
+            span
+        +e.wrapper
+          +e.UL.list
+            +e.item 
+              +e.A.link(href="page-services.html") Услуги
+            +e.item 
+              +e.A.link(href="page-about.html") О компании
+            +e.item
+              +e.A.link(href="page-news.html") Новости
+            +e.item 
+              +e.A.link(href="page-branches.html") Сертификация по отраслям
+            +e.item
+              +e.A.link(href="page-contacts.html") Контакты
+
+
+
+
+
+

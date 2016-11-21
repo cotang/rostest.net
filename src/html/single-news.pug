@@ -5,7 +5,7 @@ block content
     // Breadcrumbs
     +b.SECTION.breadcrumbs
       +e.inner.container
-        a(href="index.html") Сертификационный центр Гортест
+        a(href="index.html") Сертификационный центр Ростест
         ='>'
         a(href="page-news.html") Новости
         ='>'
@@ -13,13 +13,13 @@ block content
 
     // Content
     +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
-      .container
+      +e.inner.container
         +e.img
-          img(src='img/cert1.jpg', alt='cert1', title='cert1')
+          img(src='img/news-page.jpg', alt='news-page', title='news-page')
         +e.info
-          +b.date
+          +e.date
             span(itemprop="datePublished") 13.09.2016  
-          +b.category 
+          +e.category 
             span Событие          
         +e.H1.title(itemprop="headline") Новость про пожарную сертификацию (h1)
         +e.text(itemprop="articleBody")
@@ -31,8 +31,8 @@ block content
 
     // Questions section
     include partials/components/_questions-section.pug
-    // Contacts
-    include partials/components/_contacts.pug
+    // Contacts section
+    include partials/components/_contacts-section.pug
 
 
 

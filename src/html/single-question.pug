@@ -3,12 +3,13 @@ extends partials/templates/_template.pug
 block content
   +b.SECTION.page--single-question
     // Breadcrumbs
-    +b.SECTION.breadcrumbs--dark
-      a(href="index.html") Сертификационный центр Гортест
-      ='>'
-      a(href="page-questions.html") Вопросы и ответы
-      ='>'
-      span Сертификация картонных конструкций
+    +b.SECTION.breadcrumbs
+      +e.inner.container
+        a(href="index.html") Сертификационный центр Гортест
+        ='>'
+        a(href="page-questions.html") Вопросы и ответы
+        ='>'
+        span Сертификация картонных конструкций
 
     // Content
     +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
@@ -28,7 +29,7 @@ block content
                 li Какие сопроводительные документы необходимы для продажи объекта?
                 li Стоимость Ваших услуг за организацию данных формальностей?
           +e.answer(itemprop="articleSection", itemscope, itemtype="http://schema.org/Answer")
-            +e.person(itemprop="author") Анна, +7 (812) 633-05-16, spb@gortest.ru
+            +e.person(itemprop="author") Анна, +7 (812) 633-05-16, otdel@rostest.net
             +e.text(itemprop="citation")
               p Дарья, данная продукция не подлежит сертификации. Могу предложить оформить отказное письмо и/или добровольный сертификат.
               p Деятельность с Роспотребнадзором согласовывать не нужно.

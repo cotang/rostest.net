@@ -1,58 +1,34 @@
 .page{
-  // &--form{
-  //   .content__bg{
-  //     background-image: url(../img/bg-calc.jpg);      
-  //   }
-  //   .content__title{
-  //     margin: 0;
-  //     padding-top: 5px;
-  //     padding-bottom: 15px;
-  //   }
-  // }
-  // &--faq, &--questions{
-  //   .content__bg{
-  //     background-image: url(../img/bg-faq.jpg);      
-  //   }
-  //   .content__title{
-  //     margin: 0;
-  //     padding-top: 5px;
-  //     padding-bottom: 15px;
-  //   }   
-  // }
-  // &--news{
-  //   .content__bg{
-  //     background-image: url(../img/bg-news.jpg);      
-  //   }
-  //   .content__title{
-  //     margin: 0;
-  //     padding-top: 5px;
-  //     padding-bottom: 15px;
-  //   }
-  // }
-  // &--single-news, &--glossary, &--single-glossary {
-  //   .content__bg{
-  //     background-image: url(../img/bg-calc.jpg);      
-  //   }
-  //   .content__title{
-  //     margin: 0;
-  //     padding-top: 5px;
-  //     padding-bottom: 15px;
-  //   }
-  // }
-  // &--single-glossary {
-  //   .content__text{
-  //     margin-top: 45px;
-  //   }
-  // }
-  // &--single-service {
-  //   border-top: 1px solid $lighter-grey;
-  //   .content__title{
-  //     color: $green;
-  //     @include font-family('Roboto Bold', normal, normal);
-  //     font-size: $font-size-service-title;
-  //     margin: 20px 0;
-  //   }
-  // }
+
+  &--single-branch {
+    .content__inner{
+      padding-top: 50px;
+    }
+    .content__title{
+      margin-bottom: 35px;
+    }
+  }
+  &--single-news {
+    .content__inner{
+      padding-top: 60px;
+    }
+    .content__img{
+      margin-right: 50px;
+      margin-bottom: 40px;
+    }
+    .content__title{
+      margin-top: 10px;
+      font-size: $font-size-biggest;
+    }
+  }
+  &--single-service {
+    .content__inner{
+      padding-top: 90px;
+    }
+    .content__title{
+      margin-bottom: 25px;
+    }
+  }
   &--services{
     .services{
       border-bottom: 2px solid $border-grey;
@@ -75,14 +51,10 @@
       margin-top: 85px;
     }
   } 
-  // &--contacts{
-  //   border-top: 1px solid $lighter-grey;
-  // }
-
-
-
-  // &__form{
-  //   margin: 70px 0;
-  // } 
+  &--about{
+    .content__inner{
+      padding-top: 25px;
+    }
+  }
 }
 

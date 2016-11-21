@@ -1,23 +1,21 @@
 .pagination{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 
   &__number{
     display: inline-block;
-    padding: 12px;
+    padding: 10px 16px 11px 16px;
     margin: 0 3px;
-    border: 1px solid $light-grey;
     border-radius: 3px;
     color: $text-color;
     &:hover, &:focus, &:active{
-      color: $green;
+      color: $blue;
     }
     &--current{
-      background-color: $green;
+      background-color: $blue;
       color: $text-color-white;
       &:hover, &:focus, &:active{
         color: $text-color-white;
@@ -26,15 +24,22 @@
   } 
   &__arrow{
     display: inline-block;
-    padding: 12px 40px;
+    padding: 20px 20px;
     margin: 0 3px;
     border: 1px solid $light-grey;
-    border-radius: 3px;
-    background-image: url(../img/arrow-pagination.png);
+    border-radius: 3px;    
+    background-image: url(../img/pagination-next.png);
     background-repeat: no-repeat;
     background-position: center center;
     &--prev{
       transform: rotate(180deg);
     }
+    // &:after{
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   @include sprite($s-arrow-next);
+    // }
   }
 }

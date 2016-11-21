@@ -1,80 +1,116 @@
 include ../abstracts/bemto/bemto.pug
 
 +b.SECTION.branches(itemscope, itemtype="http://schema.org/Service")
-  +e.H1.title Сертификация по отраслям
   .container
+    +e.H1.title Сертификация по отраслям
     .row
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Пищевая продукция
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-food')
+          +e.DIV.name(itemprop="category") Пищевая продукция
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Косметика
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-cosmetics')
+          +e.DIV.name(itemprop="category") Косметика
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Алкоголь
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-alcohol')
+          +e.DIV.name(itemprop="category") Алкоголь
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Бытовая химия
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-cleaning')
+          +e.DIV.name(itemprop="category") Бытовая химия
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Легкая промышленность
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-light-industry')
+          +e.DIV.name(itemprop="category") Легкая промышленность
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Обувь
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-shoes')
+          +e.DIV.name(itemprop="category") Обувь
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Товары для детей
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-kids')
+          +e.DIV.name(itemprop="category") Товары для детей
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Игрушки
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-toy')
+          +e.DIV.name(itemprop="category") Игрушки
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Мебель
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-furniture')
+          +e.DIV.name(itemprop="category") Мебель
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Световое оборудование
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-light')
+          +e.DIV.name(itemprop="category") Световое оборудование
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Бытовая техника
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-home-technics')
+          +e.DIV.name(itemprop="category") Бытовая техника
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Промышленное оборудование
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-industrial-equipment')
+          +e.DIV.name(itemprop="category") Промышленное оборудование
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Строительные материалы
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-construction')
+          +e.DIV.name(itemprop="category") Строительные материалы
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Автомобильная техника и запчасти
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-auto')
+          +e.DIV.name(itemprop="category") Автомобильная техника и запчасти
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Упаковка
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-wrapper')
+          +e.DIV.name(itemprop="category") Упаковка
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") Смазочные материалы и масла
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-oil')
+          +e.DIV.name(itemprop="category") Смазочные материалы и масла
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") СИЗ
-      +b.branch.col-xs-12.col-md-4.col-xl-2
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-defence')
+          +e.DIV.name(itemprop="category") СИЗ
+      +b.branch.col-xs-12.col-sm-6.col-md-4.col-lg-3.col-xl-2
         +e.A.link(href="single-branch.html")
-          +e.icon
-          +e.name(itemprop="category") БАДы
+          +e.DIV.icon
+            svg(width='30', height='30')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='#branch-bad')
+          +e.DIV.name(itemprop="category") БАДы
 
  

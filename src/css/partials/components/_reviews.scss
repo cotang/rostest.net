@@ -6,11 +6,9 @@
     padding-top: 40px;
     padding-bottom: 30px;
   }
-
   &__title{
     @include font-family('Open Sans Bold', normal, normal);
-    font-size: $font-size-title;
-    color: $text-color-white;
+    font-size: $font-size-title;    
     margin: 0 0 -10px;
     @include mq($from:xs, $until:lg){
       font-size: $font-size-biggest;
@@ -39,14 +37,28 @@
       }
     }
   }
+
+  &--cyan{
+    background-color: $dark-cyan;
+    .reviews__title{
+      color: $text-color-white;
+    }
+  }
+  &--white{
+    background-color: $white;
+    .reviews__title{
+      color: $cyan;
+    }
+  }
 }
 
 .review-slide{
   margin: 45px 20px;
   position: relative;
-  @include font-family('Open Sans Italic', normal, normal);
+  @include font-family('Open Sans Italic', normal, normal);  
   color: $text-grey;
   background-color: $white;
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   line-height: 1.6;
   padding: 20px 20px 20px 70px;
@@ -57,10 +69,11 @@
     bottom: -8px;
     right: 60px;
     transform: skewY(30deg);
-    height: 50px;
+    height: 20px;
     width: 30px;
     background-color: $white;
-    z-index: -1;
+    box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1;
   }
 
   &__img{
@@ -73,6 +86,9 @@
     height: 100px;
     @include mq($from:xs, $until:md){
       left: -10px;
+    } 
+    &:hover, &:focus {
+      cursor: pointer;
     }
 
     img{
@@ -90,73 +106,23 @@
     color: $text-blue;
     text-align: right;
   }
+  &__modal{
+    display: none;
+    z-index: 9;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid $grey;  
+    img{
+      width: auto;
+      height: auto;
+      max-height: calc(100vh - 40px);
+      display: block;
+    }
+  }  
 }
 
 
-
-// .review-item{
-//   display: flex;
-//   &--third{
-//     @include mq($from:xs, $until:xl){
-//       display: none;
-//     }    
-//   }
-//   &--second{
-//     @include mq($from:xs, $until:md){
-//       display: none;
-//     }    
-//   }
-
-//   &__img{
-//     flex: 0 0 90px;
-//     width: 90px;
-//     height: 90px;
-//     img{
-//       width: 100%;
-//       height: 100%;
-//       display: block;
-//       object-fit: cover;
-//       border-radius: 50%;
-//     }
-//   }
-//   &__inner{
-//     padding-left: 20px;
-//   }
-//   &__title{
-//     font-size: $font-size-faq-title;
-//     @include font-family('Open Sans Light', normal, normal);
-//     margin: 0 0 10px;    
-//   }
-//   &__text{
-//     position: relative;
-//     background-color: $green;
-//     color: $text-color-white;
-//     font-size: $font-size-small;
-//     line-height: 1.71;
-//     @include font-family('Open Sans Light', normal, normal);
-//     border-radius: 20px;
-//     padding: 15px;
-//     &:before{
-//       content: '';
-//       position: absolute;
-//       top: 0;
-//       left: -40px;
-//       height: 30px;
-//       width: 50px;
-//       border-radius: 50%;
-//       background-color: $green;
-//       clip: rect(auto, auto, 15px, 25px)
-//     }
-//     &:after{
-//       content: '';
-//       position: absolute;
-//       top: 0;
-//       left: -30px;
-//       height: 30px;
-//       width: 30px;
-//       border-radius: 50%;
-//       background-color: $white;
-//       clip: rect(auto, auto, 15px, 15px)
-//     }
-//   }
-// }

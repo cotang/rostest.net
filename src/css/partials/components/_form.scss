@@ -1,9 +1,4 @@
 .form{
-  // text-align: center;
-  // position: relative;
-  // padding-top: 20px;
-  // padding-bottom: 20px;
-
   &__input{
     border-radius: 3px;
     background-color: $white;
@@ -58,23 +53,40 @@
   
   &--question{
     form{
-      columns: 2;
-      column-gap: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      max-height: 240px;
       @include mq($from:xs, $until:sm){
-        columns: 1;
+        max-height: initial;
       }
-    }
-    .form-group{
-      display: inline-block;  /* preventing from columns parts shifting */
-      vertical-align: top;    /* preventing from columns parts shifting */
-      width: 100%;            /* preventing from columns parts shifting */
-    }
-    .form__input, .form__textarea, .form__select{
-      margin-bottom: 25px;
     }
     .form__textarea{
       height: 170px;
     }
+    .form-group{
+      margin: 0 20px;
+    }
+
+
+    // form{
+    //   columns: 2;
+    //   column-gap: 40px;
+    //   @include mq($from:xs, $until:sm){
+    //     columns: 1;
+    //   }
+    // }
+    // .form-group{
+    //   display: inline-block;  /* preventing from columns parts shifting */
+    //   vertical-align: top;    /* preventing from columns parts shifting */
+    //   width: 100%;            /* preventing from columns parts shifting */
+    // }
+    // .form__input, .form__textarea, .form__select{
+    //   margin-bottom: 25px;
+    // }
+    // .form__textarea{
+    //   height: 170px;
+    // }
   }
 }
 

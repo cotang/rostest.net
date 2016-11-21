@@ -17,12 +17,6 @@
   }
 }
 
-.date{
-  font-size: $font-size-small;
-  display: inline-block;
-  color: $date-grey;
-}
-
 .news-section-article{
   margin-bottom: 30px;
   &__img{
@@ -44,6 +38,11 @@
   &__title{
     margin: 0;
     @include font-family('Open Sans Semibold', normal, normal);
+  }
+  &__date{
+    font-size: $font-size-small;
+    display: inline-block;
+    color: $date-grey;    
   }
 }
 

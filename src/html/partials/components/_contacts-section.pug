@@ -1,12 +1,12 @@
 include ../abstracts/bemto/bemto.pug
 
 
-+b.SECTION.contacts
-  +e.map
++b.SECTION.contacts-section
+  +e.map.map
   .container
     .row
       .col-xs-12.col-lg-5     
-        +b.contacts-section(itemscope, itemtype="http://schema.org/ContactPoint")
+        +b.contacts-section-data(itemscope, itemtype="http://schema.org/ContactPoint")
           +e.item 
             +e.H3.title Приходите в гости!
             +e.DIV.address(itemprop="areaServed") г.Москва, пер. Грохольский, д. 32, оф. 302 

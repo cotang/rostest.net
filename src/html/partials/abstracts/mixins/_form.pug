@@ -12,7 +12,7 @@ mixin form(items)
             +e.INPUT.input(type='text', name='Имя', placeholder="Имя:")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-tel.required
-            +e.INPUT.input(type='tel', name='Телефон', placeholder="Телефон:*")
+            +e.INPUT.input(type='tel', name='Телефон', placeholder="Телефон:")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-email
             +e.INPUT.input(type='email', name='Email', placeholder="Email:")
@@ -26,7 +26,7 @@ mixin form(items)
             +e.INPUT.input(type='text', name='Имя', placeholder="Имя:")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-tel.required
-            +e.INPUT.input(type='tel', name='Телефон', placeholder="Телефон:*")
+            +e.INPUT.input(type='tel', name='Телефон', placeholder="Телефон:")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-email
             +e.INPUT.input(type='email', name='Email', placeholder="Email:")
@@ -60,9 +60,9 @@ mixin form(items)
 
         .form-group
           if item.name == 'application'
-            +b.BUTTON.btn--form.--blue(type='submit') #{item.button}
+            +b.BUTTON.btn--form.--application.--blue(type='submit') #{item.button}
           if item.name == 'question'
-            +b.BUTTON.btn--form.--red(type='submit') #{item.button}
+            +b.BUTTON.btn--form.--question.--red(type='submit') #{item.button}
           p.help-block.help-block-success #{item.success}
 
 
