@@ -160,7 +160,7 @@
                           <p class="help-block">Ошибка заполнения поля формы</p>
                         </div>
                         <div class="form-group field-tel required">
-                          <input class="form__input" type="tel" name="Телефон" placeholder="Телефон:*" />
+                          <input class="form__input" type="tel" name="Телефон" placeholder="Телефон:" />
                           <p class="help-block">Ошибка заполнения поля формы</p>
                         </div>
                         <div class="form-group field-email">
@@ -172,7 +172,7 @@
                           <p class="help-block">Ошибка заполнения поля формы</p>
                         </div>
                         <div class="form-group">
-                          <button class="btn btn--form btn--blue" type="submit">Узнать стоимость</button>
+                          <button class="btn btn--form btn--application btn--blue" type="submit">Узнать стоимость</button>
                           <p class="help-block help-block-success">Ваша заявка отправлена</p>
                         </div>
                       </form>
@@ -335,7 +335,7 @@
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group field-tel required">
-                        <input class="form__input" type="tel" name="Телефон" placeholder="Телефон:*" />
+                        <input class="form__input" type="tel" name="Телефон" placeholder="Телефон:" />
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group field-email">
@@ -347,7 +347,7 @@
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group">
-                        <button class="btn btn--form btn--red" type="submit">Задать вопрос</button>
+                        <button class="btn btn--form btn--question btn--red" type="submit">Задать вопрос</button>
                         <p class="help-block help-block-success">Ваш вопрос отправлен</p>
                       </div>
                     </form>
@@ -357,24 +357,24 @@
             </div>
           </div>
         </div>
-        <!-- Contacts-->
-        <section class="contacts">
-          <div class="contacts__map"></div>
+        <!-- Contacts section-->
+        <section class="contacts-section">
+          <div class="contacts-section__map map"></div>
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-lg-5">
-                <div class="contacts-section" itemscope itemtype="http://schema.org/ContactPoint">
-                  <div class="contacts-section__item">
-                    <h3 class="contacts-section__title">Приходите в гости!</h3>
-                    <div class="contacts-section__address" itemprop="areaServed">г.Москва, пер. Грохольский, д. 32, оф. 302 </div>
+                <div class="contacts-section-data" itemscope itemtype="http://schema.org/ContactPoint">
+                  <div class="contacts-section-data__item">
+                    <h3 class="contacts-section-data__title">Приходите в гости!</h3>
+                    <div class="contacts-section-data__address" itemprop="areaServed">г.Москва, пер. Грохольский, д. 32, оф. 302 </div>
                   </div>
-                  <div class="contacts-section__item">
-                    <h3 class="contacts-section__title">Пишите!</h3>
-                    <a class="contacts-section__link contacts-section__link--email" href="mailto:otdel@rostest.net" target="_blank" itemprop="email">otdel@rostest.net</a>
+                  <div class="contacts-section-data__item">
+                    <h3 class="contacts-section-data__title">Пишите!</h3>
+                    <a class="contacts-section-data__link contacts-section-data__link--email" href="mailto:otdel@rostest.net" target="_blank" itemprop="email">otdel@rostest.net</a>
                   </div>
-                  <div class="contacts-section__item">
-                    <h3 class="contacts-section__title">Звоните!</h3>
-                    <a class="contacts-section__link contacts-section__link--tel" href="tel:+74956603066" target="_blank" itemprop="telephone">+7 (495) 660-30-66</a>
+                  <div class="contacts-section-data__item">
+                    <h3 class="contacts-section-data__title">Звоните!</h3>
+                    <a class="contacts-section-data__link contacts-section-data__link--tel" href="tel:+74956603066" target="_blank" itemprop="telephone">+7 (495) 660-30-66</a>
                   </div>
                 </div>
               </div>
@@ -445,8 +445,10 @@
           </nav>
         </div>
       </div>
-      <a class="up" href="#"></a>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>
