@@ -84,11 +84,11 @@
                 </li>
               </ul>
             </div>
-            <div class="city__link-wrapper">
-              <a class="city__link city__link--tel" href="tel:+74956603066" target="_blank" itemprop="telephone">+7 (495) 660-30-66</a>
+            <div class="city__tel-wrapper">
+              <a class="city__tel" href="tel:+74956603066" target="_blank" itemprop="telephone">+7 (495) 660-30-66</a>
             </div>
-            <div class="city__link-wrapper">
-              <a class="city__link city__link--email" href="mailto:otdel@rostest.net" target="_blank" itemprop="email">otdel@rostest.net</a>
+            <div class="city__email-wrapper">
+              <a class="city__email" href="mailto:otdel@rostest.net" target="_blank" itemprop="email">otdel@rostest.net</a>
             </div>
           </div>
         </div>
@@ -305,10 +305,12 @@
                       </div>
                       <div class="form-group field-tel required">
                         <input class="form__input" type="tel" name="Телефон" placeholder="Телефон:" />
+                        <div class="form__description">Для оперативной связи с вами</div>
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group field-email">
                         <input class="form__input" type="email" name="Email" placeholder="Email:" />
+                        <div class="form__description">Для отправки таблиц с подробными расчетами</div>
                         <p class="help-block">Ошибка заполнения поля формы</p>
                       </div>
                       <div class="form-group field-question">
@@ -393,6 +395,37 @@
     </footer>
     <div class="modal">
       <div class="modal__overlay"></div>
+      <div class="modal__form">
+        <a class="modal__close" href="#"></a>
+        <!-- Form application    -->
+        <section class="form form--application">
+          <form action="" method="">
+            <h2 class="form__title">Узнать стоимость и сроки оформления</h2>
+            <div class="form-group field-name">
+              <input class="form__input" type="text" name="Имя" placeholder="Имя:" />
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group field-tel required">
+              <input class="form__input" type="tel" name="Телефон" placeholder="Телефон:" />
+              <div class="form__description">Для оперативной связи с вами</div>
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group field-email">
+              <input class="form__input" type="email" name="Email" placeholder="Email:" />
+              <div class="form__description">Для отправки таблиц с подробными расчетами</div>
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group field-product">
+              <textarea class="form__textarea" type="text" name="Ваш документ" placeholder="Ваш продукт"></textarea>
+              <p class="help-block">Ошибка заполнения поля формы</p>
+            </div>
+            <div class="form-group">
+              <button class="btn btn--form btn--application btn--blue" type="submit">Узнать стоимость</button>
+              <p class="help-block help-block-success">Ваша заявка отправлена</p>
+            </div>
+          </form>
+        </section>
+      </div>
     </div>
     <script src="js/script.min.js"></script>
   </body>
