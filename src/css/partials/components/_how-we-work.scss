@@ -47,6 +47,9 @@
     color: $text-grey-title;
     flex: 1 1 auto;
     padding-left: 15px;
+    @include mq($from:xs, $until:sm){
+      font-size: $font-size;
+    }
   }
   &__arrow{
     flex: 0 0 auto;

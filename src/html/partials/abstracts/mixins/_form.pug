@@ -8,14 +8,18 @@ mixin form(items)
       form(action='', method='')
 
         if item.name == 'application'
+          if modal
+            +e.H2.title Узнать стоимость и сроки оформления
           .form-group.field-name
             +e.INPUT.input(type='text', name='Имя', placeholder="Имя:")
             p.help-block Ошибка заполнения поля формы
           .form-group.field-tel.required
             +e.INPUT.input(type='tel', name='Телефон', placeholder="Телефон:")
+            +e.description Для оперативной связи с вами
             p.help-block Ошибка заполнения поля формы
           .form-group.field-email
             +e.INPUT.input(type='email', name='Email', placeholder="Email:")
+            +e.description Для отправки таблиц с подробными расчетами
             p.help-block Ошибка заполнения поля формы
           .form-group.field-product
             +e.TEXTAREA.textarea(type='text', name='Ваш документ', placeholder="Ваш продукт")
@@ -27,9 +31,11 @@ mixin form(items)
             p.help-block Ошибка заполнения поля формы
           .form-group.field-tel.required
             +e.INPUT.input(type='tel', name='Телефон', placeholder="Телефон:")
+            +e.description Для оперативной связи с вами
             p.help-block Ошибка заполнения поля формы
           .form-group.field-email
             +e.INPUT.input(type='email', name='Email', placeholder="Email:")
+            +e.description Для отправки таблиц с подробными расчетами
             p.help-block Ошибка заполнения поля формы
           .form-group.field-question
             +e.TEXTAREA.textarea(type='text', name='Вопрос', placeholder="Вопрос:")

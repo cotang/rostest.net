@@ -134,7 +134,7 @@
   &__item{
     padding: 2px 0;
   }
-  &__link-wrapper{
+  &__tel-wrapper{
     @include mq($from:lg, $until:xl){
       flex: 0 0 33.3333%;
       max-width: 33.3333%;
@@ -145,30 +145,39 @@
       margin-bottom: 10px;
     }   
   }
-  &__link{
-    &--tel{
-      @include font-family('Open Sans Semibold', normal, normal);
-      font-size: $font-size-biggest26;
-      color: $text-color-white;
-      white-space: nowrap;
-      @include mq($from:xs, $until:lg){
-        font-size: $font-size-big;
-      } 
-      &:hover, &:focus {
-        text-decoration: none;
-      }
+  &__email-wrapper{
+    @include mq($from:lg, $until:xl){
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }  
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }   
+  }
+  &__tel{
+    @include font-family('Open Sans Semibold', normal, normal);
+    font-size: $font-size-biggest26;
+    color: $text-color-white;
+    white-space: nowrap;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-big;
+    } 
+    &:hover, &:focus {
+      text-decoration: none;
     }
-    &--email{
-      @include font-family('Open Sans', normal, normal); 
-      font-size: $font-size-biggest;
-      border-bottom: 2px dashed $blue;
-      @include mq($from:xs, $until:lg){
-        font-size: $font-size-big;
-      } 
-      &:hover, &:focus {
-        text-decoration: none;
-        border-bottom: 2px dashed transparent;
-      }
+  }
+  &__email{
+    @include font-family('Open Sans', normal, normal); 
+    font-size: $font-size-biggest;
+    border-bottom: 2px dashed $blue;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-big;
+    } 
+    &:hover, &:focus {
+      text-decoration: none;
+      border-bottom: 2px dashed transparent;
     }
   }
 }

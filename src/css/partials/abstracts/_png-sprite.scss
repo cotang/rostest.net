@@ -55,6 +55,17 @@ $s-check-total-width: 317px;
 $s-check-total-height: 252px;
 $s-check-image: '../img/png-sprite.png';
 $s-check: (270px, 175px, -270px, -175px, 17px, 12px, 317px, 252px, '../img/png-sprite.png', 's-check', );
+$s-close-name: 's-close';
+$s-close-x: 171px;
+$s-close-y: 67px;
+$s-close-offset-x: -171px;
+$s-close-offset-y: -67px;
+$s-close-width: 23px;
+$s-close-height: 23px;
+$s-close-total-width: 317px;
+$s-close-total-height: 252px;
+$s-close-image: '../img/png-sprite.png';
+$s-close: (171px, 67px, -171px, -67px, 23px, 23px, 317px, 252px, '../img/png-sprite.png', 's-close', );
 $s-download-name: 's-download';
 $s-download-x: 137px;
 $s-download-y: 67px;
@@ -234,7 +245,7 @@ $s-services-water: (0px, 133px, 0px, -133px, 59px, 63px, 317px, 252px, '../img/p
 $spritesheet-width: 317px;
 $spritesheet-height: 252px;
 $spritesheet-image: '../img/png-sprite.png';
-$spritesheet-sprites: ($s-arrow-next, $s-arrow-prev, $s-arrow-steps, $s-check, $s-download, $s-red-check, $s-search, $s-services-auto, $s-services-eac, $s-services-eagle, $s-services-eco, $s-services-fire, $s-services-folders, $s-services-globe, $s-services-iso, $s-services-letters, $s-services-other, $s-services-rst, $s-services-scheme, $s-services-water, );
+$spritesheet-sprites: ($s-arrow-next, $s-arrow-prev, $s-arrow-steps, $s-check, $s-close, $s-download, $s-red-check, $s-search, $s-services-auto, $s-services-eac, $s-services-eagle, $s-services-eco, $s-services-fire, $s-services-folders, $s-services-globe, $s-services-iso, $s-services-letters, $s-services-other, $s-services-rst, $s-services-scheme, $s-services-water, );
 $spritesheet: (317px, 252px, '../img/png-sprite.png', $spritesheet-sprites, );
 
 /*
