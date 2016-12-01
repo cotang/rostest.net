@@ -1416,6 +1416,7 @@ img {
       clear: both;
       display: table; }
   .content__img {
+    max-width: 300px;
     float: left;
     margin-bottom: 60px;
     margin-right: 70px; }
