@@ -84,7 +84,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      max-height: 240px;
+      max-height: 400px;
       @include mq($from:xs, $until:sm){
         max-height: initial;
       }

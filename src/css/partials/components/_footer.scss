@@ -47,7 +47,7 @@
   &__item{
     padding: 0 10px;
     flex: 1 1 auto;
-    max-width: 20%;
+    max-width: 25%;
     @include mq($from:xs, $until:md){
       flex: 0 0 100%;
       max-width: 100%;
@@ -58,7 +58,6 @@
     font-size: $font-size-big;
     color: $text-color-white;
     max-width: 120px;
-    display: inline-block;
     @include mq($from:xs, $until:lg){
       width: 100%;
       word-wrap: break-word;

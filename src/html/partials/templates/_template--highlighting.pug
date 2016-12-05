@@ -1,6 +1,6 @@
 //- @pugdoc
-  name: Main template
-  description: template for pages
+  name: template
+  description: template for pages with highlighted last menu item
 
 doctype
 html(lang='ru', prefix='og: http://ogp.me/ns#')
@@ -9,7 +9,7 @@ html(lang='ru', prefix='og: http://ogp.me/ns#')
 
   body
 
-    include ../components/_header--index.pug
+    include ../components/_header--highlighting.pug
 
     main
       block content

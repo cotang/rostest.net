@@ -28,11 +28,14 @@ include ../abstracts/bemto/bemto.pug
                 +e.A.link(href="page-about.html#advantages") Преимущества
               +e.item
                 +e.A.link(href="page-about.html#reviews") Отзывы
+              +e.item
+                +e.A.link(href="page.html") Публикации
 
           +e.item
             +e.A.link(href="page-news.html") Новости
-          +e.item 
-            +e.A.link(href="page-branches.html") Сертификация по отраслям
+            +b.UL.subnav-footer
+              +e.item 
+                +e.A.link(href="page-questions.html") Вопрос-ответ
 
           +e.item
             +e.A.link(href="page-contacts.html") Контакты
@@ -42,7 +45,7 @@ include ../abstracts/bemto/bemto.pug
               +e.line 
                 +e.A.link--email(href="mailto:otdel@rostest.net", target="_blank", itemprop="email") otdel@rostest.net
               +e.line 
-                +e.DIV.address(itemprop="areaServed") г.Москва, пер. Грохольский, д. 32, оф. 302
+                +e.DIV.address(itemprop="areaServed") г.Москва, пер. Грохольский, д. 32/2, оф. 302
 
   //- +b.A.up(href="#")
 +b.modal
