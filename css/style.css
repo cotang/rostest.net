@@ -1010,7 +1010,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-direction: column;
       flex-direction: column;
-  max-height: 240px; }
+  max-height: 400px; }
 
 .form--question .form__textarea {
   height: 178px; }
@@ -1294,12 +1294,11 @@ img {
     padding: 0 10px;
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
-    max-width: 20%; }
+    max-width: 25%; }
   .nav-footer__link {
     font-size: 18px;
     color: #ffffff;
-    max-width: 120px;
-    display: inline-block; }
+    max-width: 120px; }
 
 .subnav-footer {
   padding-left: 0;
