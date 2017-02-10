@@ -30,9 +30,11 @@
     
 .nav-footer{
   padding-left: 50px;
+  padding-right: 50px;
   flex: 1 1 auto;
   @include mq($from:xs, $until:xl){
     padding-left: 0;
+    padding-right: 0;
   }
   &__list{
     padding-left: 0;
@@ -79,6 +81,22 @@
 }
 
 .contacts-footer{
+  flex: 1 1 auto;
+  max-width: 20%;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  &__title{
+    @include font-family('Open Sans Regular', normal, normal);
+    margin: 0;
+    font-size: $font-size-big;
+    a{
+      color: $text-color-white;
+    }
+  }
   &__line{
     margin: 10px 0;
   }

@@ -1281,6 +1281,7 @@ img {
 
 .nav-footer {
   padding-left: 50px;
+  padding-right: 50px;
   -ms-flex: 1 1 auto;
       flex: 1 1 auto; }
   .nav-footer__list {
@@ -1310,8 +1311,20 @@ img {
   .subnav-footer__link {
     color: #b6b9bb; }
 
-.contacts-footer__line {
-  margin: 10px 0; }
+.contacts-footer {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  max-width: 20%; }
+  .contacts-footer__title {
+    font-family: "Open Sans Regular", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    font-size: 18px; }
+    .contacts-footer__title a {
+      color: #ffffff; }
+  .contacts-footer__line {
+    margin: 10px 0; }
 
 .btn {
   display: inline-block;
@@ -3484,7 +3497,8 @@ img {
     margin: 0 0 25px;
     text-align: center; }
   .nav-footer{
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0; }
   .cert-form__text{
     font-size: 18px; }
   .reviews .slick-prev{
@@ -3702,6 +3716,12 @@ img {
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 10px; }
+  .contacts-footer{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    text-align: center; }
   .content__inner{
     padding-top: 50px;
     padding-bottom: 40px; }
